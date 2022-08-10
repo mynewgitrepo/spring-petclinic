@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'kubectl get nodes'
+                sh 'docker images'
             }
         }
         stage('Test') {
